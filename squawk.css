@@ -3,7 +3,7 @@
     margin:0;
 }
   header {
-    background: url("images/beverage-black-coffee-coffee-64778.jpg");
+    background: url("squawk/images/beverage-black-coffee-coffee-64778.jpg");
     background-position: top;
     background-size: cover;
     color: #f8fffc;
@@ -258,7 +258,7 @@ div .icons:hover {
 
    .button {
      border-radius: 25px;
-     background-color:rgba(253, 221, 159,1);
+     background-color:rgba(254, 242, 191,1);
      border: none;
      color: rgba(244, 183, 86,1);
      text-align: center;
