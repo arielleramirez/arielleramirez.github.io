@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+  header {
+    background: url("images/beverage-black-coffee-coffee-64778.jpg");
+    background-position: top;
+    background-size: cover;
+    color: #f8fffc;
+    height: 100vh;
+    padding: 35px;
+    opacity: .75;
+}
+
+  header p{
+    font-family: 'Signika', serif;
+    font-size: 42px;
+    margin: 350px 5px 0 5px;
+    padding-top: 50px;
+    text-align: center;
+    text-shadow: 2px 2px rgba(0, 0 , 0, .25);
+}
+
+ .header{
+    color: white;
+    text-align: center;
+}
+
+
+  a {
+     color: #ffffff;
+}
+
+  h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 85px;
+    padding: 0 35px;
+    text-shadow: 2px 2px lightgray;
+}
+
+  h2{
+    color: rgba(244, 183, 86,1);
+    font-family: 'Quando', serif;
+    font-size: 40px;
+
+}
+
+  h3{
+    color: rgba(244, 183, 86,1);
+    font-family: 'Quando', serif;
+    font-size: 24px;
+
+}
+
+  p{
+    color: rgba(253, 221, 159,1);
+    font-family: 'Judson', serif;
+    font-size: 15px;
+}
+
+
+  .homepic{
+    transform: rotate(20deg);
+
+}
+
+  em{
+    color: rgba(254, 242, 191,1);
+}
+
+  section p{
+    color:rgba(253, 221, 159,1);
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+  hr{
+    clear:both;
+    margin: 65px 150px 65px 150px;
+}
+
+  article{
+    text-align: center;
+    margin-top: 50px;
+}
+
+div .icons {
+  border-radius: none;
+  background-color: white;
+  border: none;
+  color: rgba(244, 183, 86,1);
+  text-align: center;
+  font-size: 20px;
+  padding: 15px 35px;
+  font-weight: bold;
+  display:inline-block;
+  transition: all 0.5s;
+  cursor: pointer;
+
+}
+
+div .icons:hover {
+  color: black;
+
+}
+  .first-width{
+    float:left;
+    padding: 60px 130px 0 130px;
+    margin: 0 10px;
+    width: 32px;
+}
+
+  .second-width{
+    float: left;
+    margin: 0 10px;
+    padding: 60px 330px 0 330px;
+    width: 32px;
+
+}
+
+  .third-width{
+    float: left;
+    magrin: 0 10px;
+    padding: 60px 80px 0 80px;
+    width: 32px;
+
+}
+
+
+  .first-paragraph{
+    float:left;
+    padding: 5px 130px;
+    text-align: center;
+    width: 200px;
+
+}
+
+  .second-paragraph{
+    float: left;
+    padding: 5px 130px;
+    text-align: center;
+    width: 200px;
+
+
+}
+
+  .third-paragraph{
+    float: left;
+    padding: 5px 130px;
+    text-align: center;
+    width: 200px;
+}
+
+  .screen1{
+    background: rgba(254, 242, 191,1);
+    height: 650px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+
+
+  .section1 h2{
+    float: right;
+    height: 200px;
+    margin: -450px 150px 0;
+    width: 400px;
+}
+
+  .section1 p{
+    color:rgba(253, 221, 159,1);
+    float: right;
+    height: 200px;
+    margin: -380px 150px 0;
+    width: 400px;
+}
+
+
+  .screen2{
+    background-color: white;
+    height: 650px;
+    width: 100%;
+}
+
+  .section2 p{
+    color: rgba(253, 221, 159,1);
+    height: 200px;
+    margin: 10px 0 0 100px;
+    width: 650px;
+}
+
+  .section2 h2{
+    margin: -450px 0 0 100px;
+}
+
+
+   .screen3{
+     background: rgba(254, 242, 191,1);
+     height: 650px;
+     margin: 130px 0 0 0;
+     width: 100%
+
+}
+   .section3 p{
+     color: rgba(253, 221, 159,1);
+     float: right;
+     height: 200px;
+     margin: -330px 0 0 100px;
+     width: 700px;
+}
+
+   .section3 h2{
+     float: right;
+     height: 200px;
+     margin: -380px 0 0 650px;
+     width: 700px;
+}
+
+
+.screen4{
+     padding: 100px;
+     text-align: center;
+
+}
+
+ ul {
+     color: rgba(253, 221, 159,1);
+     font-size: 20px;
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+}
+
+.divider{
+  background-color: rgba(254, 242, 191,1);
+  height: 50px;
+  width: 100%;
+  clear:both;
+
+}
+
+ footer h2{
+   margin: 0 0 0 555px;
+   padding-top: 100px;
+ }
+ footer p{
+ color: rgba(244, 183, 86,1);
+ float: left;
+ font-size: 16pt;
+ line-height: 1.35em;
+ margin: 10px 0 0 80px;
+ padding: 0 420px;
+}
+
+
+
+
+
+   .button {
+     border-radius: 25px;
+     background-color:rgba(253, 221, 159,1);
+     border: none;
+     color: rgba(244, 183, 86,1);
+     text-align: center;
+     font-size: 20px;
+     padding: 15px 35px;
+     font-weight: bold;
+     display:inline-block;
+     transition: all 0.5s;
+     cursor: pointer;
+     margin: 10px 0 0 590px;
+     transition: all 0.3s;
+     box-shadow: 0 2px 5px rgba(0,0,0,.2), inset 0 3px 0 rgba(0,0,0,.2);
+
+}
+  .button:hover {
+    background-color: rgba(244, 183, 86,.75);
+    color: white;
+  }
+
+  .button.waitinglist:after{
+    padding-right: 10px;
+  }
+span{
+  padding-left: 10px;
+}
+
+
+
+
+
+
+
+   body{
+     @media (max-width: 500px){
+      body{
+      background: red;
+}
+
+   h1{
+    font-size: 36px;
+  }
+
+  li{
+    display: block;
+    padding: 5px;
+  }
