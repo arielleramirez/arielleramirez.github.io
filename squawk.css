@@ -252,6 +252,10 @@ div .icons:hover {
  padding: 0 420px;
 }
 
+a{
+  outline: none;
+  text-decoration: none;
+}
 
 
 
@@ -271,6 +275,7 @@ div .icons:hover {
      margin: 10px 0 0 590px;
      transition: all 0.3s;
      box-shadow: 0 2px 5px rgba(0,0,0,.2), inset 0 3px 0 rgba(0,0,0,.2);
+     
 
 }
   .button:hover {
