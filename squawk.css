@@ -1,3 +1,6 @@
+@import "http://fonts.googleapis.com/css?family=Raleway";
+
+
 * {
     box-sizing: border-box;
     margin:0;
@@ -27,10 +30,6 @@
 }
 
 
-  a {
-     color: #ffffff;
-}
-
   h1 {
     font-family: 'Lobster', cursive;
     font-size: 85px;
@@ -39,21 +38,21 @@
 }
 
   h2{
-    color: rgba(244, 183, 86,1);
+    color: rgba(244, 183, 86,.75);
     font-family: 'Quando', serif;
     font-size: 40px;
 
 }
 
   h3{
-    color: rgba(244, 183, 86,1);
+    color: rgba(244, 183, 86,.75);
     font-family: 'Quando', serif;
     font-size: 24px;
 
 }
 
   p{
-    color: rgba(253, 221, 159,1);
+    color: rgba(253, 221, 159,.75);
     font-family: 'Judson', serif;
     font-size: 15px;
 }
@@ -65,11 +64,11 @@
 }
 
   em{
-    color: rgba(254, 242, 191,1);
+    color: rgba(254, 242, 191,.75);
 }
 
   section p{
-    color:rgba(253, 221, 159,1);
+    color:rgba(253, 221, 159,.75);
     font-size: 20px;
     margin-top: 50px;
 }
@@ -88,7 +87,7 @@ div .icons {
   border-radius: none;
   background-color: white;
   border: none;
-  color: rgba(244, 183, 86,1);
+  color: rgba(244, 183, 86,.75);
   text-align: center;
   font-size: 20px;
   padding: 15px 35px;
@@ -152,7 +151,7 @@ div .icons:hover {
 }
 
   .screen1{
-    background: rgba(254, 242, 191,1);
+    background: rgba(254, 242, 191,.75);
     height: 650px;
     margin: 0 auto;
     width: 95%;
@@ -168,7 +167,7 @@ div .icons:hover {
 }
 
   .section1 p{
-    color:rgba(253, 221, 159,1);
+    color:rgba(253, 221, 159,.75);
     float: right;
     height: 200px;
     margin: -380px 150px 0;
@@ -183,7 +182,7 @@ div .icons:hover {
 }
 
   .section2 p{
-    color: rgba(253, 221, 159,1);
+    color: rgba(253, 221, 159,.75);
     height: 200px;
     margin: 10px 0 0 100px;
     width: 650px;
@@ -195,14 +194,14 @@ div .icons:hover {
 
 
    .screen3{
-     background: rgba(254, 242, 191,1);
-     height: 650px;
+     background-color: rgba(254, 242, 191,.75);
+     height: 625px;
      margin: 130px 0 0 0;
      width: 100%
 
 }
    .section3 p{
-     color: rgba(253, 221, 159,1);
+     color: rgba(253, 221, 159,.75);
      float: right;
      height: 200px;
      margin: -330px 0 0 100px;
@@ -218,13 +217,18 @@ div .icons:hover {
 
 
 .screen4{
+     height: 425px;
      padding: 100px;
      text-align: center;
 
 }
 
+.screen4 h2{
+  padding: 25px;
+}
+
  ul {
-     color: rgba(253, 221, 159,1);
+     color: rgba(253, 221, 159,.75);
      font-size: 20px;
      list-style-type: none;
      margin: 0;
@@ -232,7 +236,8 @@ div .icons:hover {
 }
 
 .divider{
-  background-color: rgba(254, 242, 191,1);
+  background-color: rgba(254, 242, 191,.75);
+  margin: -25px 0 0 0;
   height: 50px;
   width: 100%;
   clear:both;
@@ -244,7 +249,7 @@ div .icons:hover {
    padding-top: 100px;
  }
  footer p{
- color: rgba(244, 183, 86,1);
+ color: rgba(244, 183, 86,.75);
  float: left;
  font-size: 16pt;
  line-height: 1.35em;
@@ -257,12 +262,10 @@ a{
   text-decoration: none;
 }
 
-
-
-
+/*
    .button {
      border-radius: 25px;
-     background-color:rgba(254, 242, 191,1);
+     background-color:rgba(254, 242, 191,.75);
      border: none;
      color: rgba(244, 183, 86,1);
      text-align: center;
@@ -275,9 +278,9 @@ a{
      margin: 10px 0 0 590px;
      transition: all 0.3s;
      box-shadow: 0 2px 5px rgba(0,0,0,.2), inset 0 3px 0 rgba(0,0,0,.2);
-     
 
-}
+
+} */
   .button:hover {
     background-color: rgba(244, 183, 86,.75);
     color: white;
@@ -290,6 +293,131 @@ span{
   padding-left: 10px;
 }
 
+
+/* button */
+
+/*----------------------------------------------
+CSS settings for HTML div Exact Center
+------------------------------------------------*/
+
+#abc {
+width:100%;
+height:100%;
+opacity:.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:rgba(49,49,49,.75);
+overflow:auto
+}
+img#close {
+position:absolute;
+right:-14px;
+top:-14px;
+cursor:pointer
+}
+div#popupContact {
+position:absolute;
+left:50%;
+top:17%;
+margin-left:-202px;
+font-family:'Raleway',sans-serif
+}
+form {
+max-width:500px;
+min-width:250px;
+padding:10px 50px;
+border:2px solid gray;
+border-radius:10px;
+font-family:raleway;
+background-color:#fff
+}
+/*h2 {
+background-color:#FEFFED;
+padding:20px 35px;
+margin:-10px -50px;
+text-align:center;
+border-radius:10px 10px 0 0
+}
+*/
+hr {
+margin:10px -50px;
+border:0;
+border-top:1px solid #ccc
+}
+
+
+input[type=text] {
+width:82%;
+padding:10px;
+margin-top:30px;
+border:1px solid #ccc;
+padding-left:40px;
+font-size:16px;
+font-family:raleway
+}
+#name {
+background-image:url(../images/name.jpg);
+background-repeat:no-repeat;
+background-position:5px 7px
+}
+#email {
+background-image:url(../images/email.png);
+background-repeat:no-repeat;
+background-position:5px 7px
+}
+textarea {
+background-image:url(../images/msg.png);
+background-repeat:no-repeat;
+background-position:5px 7px;
+width:82%;
+height:95px;
+padding:10px;
+resize:none;
+margin-top:30px;
+border:1px solid #ccc;
+padding-left:40px;
+font-size:16px;
+font-family:raleway;
+margin-bottom:30px
+}
+#submit {
+text-decoration:none;
+width:100%;
+text-align:center;
+display:block;
+background-color:#FFBC00;
+color:#fff;
+border:1px solid #FFCB00;
+padding:10px 0;
+font-size:20px;
+cursor:pointer;
+border-radius:5px
+}
+span {
+color:red;
+font-weight:700
+}
+
+#popup{
+  border-radius: 25px;
+  background-color:rgba(254, 242, 191,.75);
+  border: none;
+  color: rgba(244, 183, 86,1);
+  text-align: center;
+  font-size: 20px;
+  padding: 15px 35px;
+  font-weight: bold;
+  display:inline-block;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px 0 0 590px;
+  transition: all 0.3s;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2), inset 0 3px 0 rgba(0,0,0,.2);
+}
+
+*/
 
 
 
