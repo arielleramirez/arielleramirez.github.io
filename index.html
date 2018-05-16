@@ -52,7 +52,7 @@
 <hr>
 
       <div class="screen1"><a name="screen1"></a>
-       <img src="images/tophones.png" style="max-height: 100%; width: 100vh; float: left; margin: -50px 25px; border: white 100px solid;"/>
+       <img src="images/tophones.png" style="max-height: 100%; float: left;"/>
       			<section class="section1">
               <h2>Start Connecting</h2>
       				<p> Getting confirmed is easy, just simply sign up, enter your friends phone number, await confirmation and voila, you can start sending squawks to all your friends</p>
@@ -60,7 +60,7 @@
       		</div>
 
           <div class="screen2"><a name="screen2"></a>
-            <img src="images/mockup.png" style="height: 750px; width: 1000px; margin-left: 350px; "/>
+            <img src="images/mockup.png" style=style="max-height: 100%; float: right;"/>
                 <section class="section2">
                   <h2>Select a Ringer and Send that Squawk</h2>
                   <p>Choose from a variety of sounds or upload your own voice! Send that alert with one touch, in just 40s the alert will be sent to the users phone, you have just become a life saver</p>
@@ -92,6 +92,7 @@
 
 <div class="divider"></div>
    <footer>
+
       <div style="height: 400px;">
         <img src="images/keyboard.jpg" alt="Norway" style="float:left;width:100%;height:50%;object-fit:cover; opacity: .5; z-index: -1; position: absolute;">
         <h2>Like the idea?</h2>
@@ -110,14 +111,46 @@
 
 
 </footer>
+<div id="getemail" class="modal">
+ <div id="close-modal">
+   <span></span>
+   <span></span>
+ </div>
+ <h2>Input Email</h2>
+ <form action="#" id="form" method="post" name="form">
+<img id="close" src="" onclick ="div_hide()">
+<h2>Contact Us</h2>
+<hr>
+<input id="name" name="name" placeholder="Name" type="text">
+<input id="email" name="email" placeholder="Email" type="text">
+<textarea id="msg" name="message" placeholder="Message"></textarea>
+<a href="javascript:%20check_empty()" id="submit">Send</a>
+</form>
+</div>
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 
-   <!--<script>alert("Javascript works!")
-      $("button").on("click", function(){alert("clicked!")}) -->
+   <script>function openModal(modal) {
+   $('<div class="modal-bg"><div>').insertBefore(modal).hide();
+   $(modal).addClass('open').prev().fadeIn('slow');
+ }
+
+ function closeModal() {
+   $('.modal').removeClass('open');
+   $('.modal-bg').removeClass('darken').remove();
+ }
+
+ $('#popup').click(function(){
+  openModal('#getemail');
+
+ });
+
+ $('#close-modal').click(function(){
+   closeModal();
+ });
 
 
 

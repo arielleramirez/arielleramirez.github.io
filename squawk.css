@@ -158,12 +158,11 @@ div .icons:hover {
 
   .screen1{
     background: rgba(254, 242, 191,.75);
-    height: 650px;
     margin: 0 auto;
-    width: 95%;
+    border: white 50px solid;
+    height: 100vh;
+
 }
-
-
 
   .section1 h2{
     float: right;
@@ -424,10 +423,71 @@ font-weight:700
   box-shadow: 0 2px 5px rgba(0,0,0,.2), inset 0 3px 0 rgba(0,0,0,.2);
 }
 
-*/
 
 
+/*form*/
 
+.modal-bg {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: rgba(0,0,0,.65);
+}
+
+.modal {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ width: 90%;
+ max-width: 30rem;
+ margin: 0 auto;
+ padding: 1em;
+ background: #fff;
+ z-index: 100;
+ opacity: 0;
+ pointer-events: none;
+ transition: all .45s ease-out;
+ transform: translateY(-100%);
+}
+
+.modal.open {
+ opacity: 1;
+ pointer-events: auto;
+ transform: translateY(50%);
+}
+
+#close-modal {
+ position: absolute;
+ top: 0;
+ right: 0;
+ height: 2rem;
+ width: 2rem;
+}
+
+#close-modal span {
+ height: 2rem;
+ width: .2rem;
+ position: absolute;
+ top: .5rem;
+ right: 1.5rem;
+ background-color: lightgray;
+ transform: rotate(-45deg);
+ display: inline-block;
+ border-radius: 1rem;
+}
+
+#close-modal span:nth-child(2) {
+ transform: rotate(45deg);
+}
+Message Input
+
+
+Message @Jen
+
+*bold* _italics_ ~strike~ `code` ```preformatted``` >quote
 
 
 
