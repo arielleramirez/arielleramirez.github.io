@@ -108,58 +108,12 @@ div .icons:hover {
   color: black;
 
 }
-  .first-width{
-    float:left;
-    padding: 60px 130px 0 130px;
-    margin: 0 10px;
-    width: 32px;
-}
-
-  .second-width{
-    float: left;
-    margin: 0 10px;
-    padding: 60px 330px 0 330px;
-    width: 32px;
-
-}
-
-  .third-width{
-    float: left;
-    magrin: 0 10px;
-    padding: 60px 80px 0 80px;
-    width: 32px;
-
-}
-
-
-  .first-paragraph{
-    float:left;
-    padding: 5px 130px;
-    text-align: center;
-    width: 200px;
-
-}
-
-  .second-paragraph{
-    float: left;
-    padding: 5px 130px;
-    text-align: center;
-    width: 200px;
-
-
-}
-
-  .third-paragraph{
-    float: left;
-    padding: 5px 130px;
-    text-align: center;
-    width: 200px;
-}
 
   .screen1{
-    background: rgba(254, 242, 191,.75);
+    background-color: rgba(254, 242, 191,.75);
     margin: 0 auto;
     border: white 50px solid;
+    border-bottom: none;
     height: 100vh;
 
 }
@@ -180,45 +134,51 @@ div .icons:hover {
 }
 
 
-  .screen2{
-    background-color: white;
-    height: 650px;
-    width: 100%;
-}
-
-  .section2 p{
-    color: rgba(253, 221, 159,.75);
-    height: 200px;
-    margin: 10px 0 0 100px;
-    width: 650px;
-}
-
-  .section2 h2{
-    margin: -450px 0 0 100px;
-}
-
-
-   .screen3{
-     background-color: rgba(254, 242, 191,.75);
-     height: 625px;
-     margin: 130px 0 0 0;
-     width: 100%
+.screen2{
+  background-color: white;
+  margin: 0 auto;
+  border: white 50px solid;
+  height: 100vh;
 
 }
-   .section3 p{
-     color: rgba(253, 221, 159,.75);
-     float: right;
-     height: 200px;
-     margin: -330px 0 0 100px;
-     width: 700px;
+
+.section2 h2{
+  float: left;
+  margin: -450px 0 0 70px;
+  width: 900px;
 }
 
-   .section3 h2{
-     float: right;
-     height: 200px;
-     margin: -380px 0 0 650px;
-     width: 700px;
+.section2 p{
+  color:rgba(253, 221, 159,.75);
+  float: left;
+  height: 200px;
+  margin: -400px 0 0 70px;
+  padding: 0 10px 0 0;
+  width: 900px;
 }
+
+
+
+.screen3{
+  background: rgba(254, 242, 191,.75);
+  margin: 0 auto;
+  height: 100vh;
+
+}
+
+.section3 h2{
+  float: right;
+  margin: -450px 150px 0 0;
+  width: 600px;
+}
+
+.section3 p{
+  color:rgba(253, 221, 159,.75);
+  float: right;
+  margin: -400px 150px 0 0;
+  width: 600px;
+}
+
 
 
 .screen4{
@@ -267,25 +227,6 @@ a{
   text-decoration: none;
 }
 
-/*
-   .button {
-     border-radius: 25px;
-     background-color:rgba(254, 242, 191,.75);
-     border: none;
-     color: rgba(244, 183, 86,1);
-     text-align: center;
-     font-size: 20px;
-     padding: 15px 35px;
-     font-weight: bold;
-     display:inline-block;
-     transition: all 0.5s;
-     cursor: pointer;
-     margin: 10px 0 0 590px;
-     transition: all 0.3s;
-     box-shadow: 0 2px 5px rgba(0,0,0,.2), inset 0 3px 0 rgba(0,0,0,.2);
-
-
-} */
   .button:hover {
     background-color: rgba(244, 183, 86,.75);
     color: white;
@@ -330,13 +271,12 @@ margin-left:-202px;
 font-family:'Raleway',sans-serif
 }
 form {
-max-width:500px;
-min-width:250px;
 padding:10px 50px;
 border:2px solid gray;
 border-radius:10px;
 font-family:raleway;
-background-color:#fff
+background-color:#fff;
+margin: 10px;
 }
 /*h2 {
 background-color:#FEFFED;
@@ -364,17 +304,17 @@ font-size:16px;
 font-family:raleway
 }
 #name {
-background-image:url(../images/name.jpg);
+background-image:url('');
 background-repeat:no-repeat;
 background-position:5px 7px
 }
 #email {
-background-image:url(../images/email.png);
+background-image:url('');
 background-repeat:no-repeat;
 background-position:5px 7px
 }
 textarea {
-background-image:url(../images/msg.png);
+background-image:url('');
 background-repeat:no-repeat;
 background-position:5px 7px;
 width:82%;
@@ -442,7 +382,7 @@ font-weight:700
  left: 0;
  right: 0;
  width: 90%;
- max-width: 30rem;
+ max-width: 50rem;
  margin: 0 auto;
  padding: 1em;
  background: #fff;
@@ -456,7 +396,7 @@ font-weight:700
 .modal.open {
  opacity: 1;
  pointer-events: auto;
- transform: translateY(50%);
+ transform: translateY(20%);
 }
 
 #close-modal {
