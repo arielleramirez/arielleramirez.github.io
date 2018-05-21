@@ -18,7 +18,7 @@
   header p{
     font-family: 'Signika', serif;
     font-size: 42px;
-    margin: 350px 5px 0 5px;
+    margin: 325px 5px 0 5px;
     padding-top: 50px;
     text-align: center;
     text-shadow: 2px 2px rgba(0, 0 , 0, .25);
@@ -30,11 +30,15 @@
 }
 
 
+
   h1 {
     font-family: 'Lobster', cursive;
     font-size: 85px;
-    padding: 0 35px;
+    padding: 5px 35px;
     text-shadow: 2px 2px lightgray;
+    /*margin-top:-20px;*/
+    margin-top: 25px;
+
 }
 
   h2{
@@ -58,8 +62,21 @@
     color: rgba(244, 183, 86,.75);
     font-family: 'Quando', serif;
     font-size: 24px;
+}
+
+
+i {
+  text-align: center;
+  display: inline;
+  float: right;
+  padding: 65px 2px;
+  margin-top:-35px;
+  text-decoration: bold;
+  font-size: 20px;
+  font-family: 'Judson', serif;
 
 }
+
 
   p{
     color: rgba(253, 221, 159,.75);
@@ -112,11 +129,15 @@ div .icons:hover {
   .screen1{
     background-color: rgba(254, 242, 191,.75);
     margin: 0 auto;
-    border: white 50px solid;
-    border-bottom: none;
-    height: 100vh;
+    border-top: white 50px solid;
+    border-right: white 50px solid;
+    border-left: white 50px solid;
+    border-bottom: white 50px solid;
+    height: 900px;
 
 }
+
+
 
   .section1 h2{
     float: right;
@@ -126,7 +147,7 @@ div .icons:hover {
 }
 
   .section1 p{
-    color:rgba(253, 221, 159,.75);
+    color:rgba(253, 221, 159,.95);
     float: right;
     height: 200px;
     margin: -380px 150px 0;
@@ -137,8 +158,7 @@ div .icons:hover {
 .screen2{
   background-color: white;
   margin: 0 auto;
-  border: white 50px solid;
-  height: 100vh;
+  height: 800px;
 
 }
 
@@ -149,12 +169,11 @@ div .icons:hover {
 }
 
 .section2 p{
-  color:rgba(253, 221, 159,.75);
+  color:rgba(253, 221, 159,.95);
   float: left;
   height: 200px;
-  margin: -400px 0 0 70px;
-  padding: 0 10px 0 0;
-  width: 900px;
+  margin: -400px 35px 0 70px;
+  width: 925px;
 }
 
 
@@ -173,7 +192,7 @@ div .icons:hover {
 }
 
 .section3 p{
-  color:rgba(253, 221, 159,.75);
+  color:rgba(253, 221, 159,.95);
   float: right;
   margin: -400px 150px 0 0;
   width: 600px;
@@ -227,18 +246,17 @@ a{
   text-decoration: none;
 }
 
-  .button:hover {
+  #popup:hover {
     background-color: rgba(244, 183, 86,.75);
     color: white;
   }
 
-  .button.waitinglist:after{
+  #popup.waitinglist:after{
     padding-right: 10px;
   }
-span{
+b{
   padding-left: 10px;
 }
-
 
 /* button */
 
@@ -261,7 +279,8 @@ img#close {
 position:absolute;
 right:-14px;
 top:-14px;
-cursor:pointer
+cursor:pointer;
+color:orange;
 }
 div#popupContact {
 position:absolute;
@@ -271,21 +290,15 @@ margin-left:-202px;
 font-family:'Raleway',sans-serif
 }
 form {
-padding:10px 50px;
+padding:20px 50px;
 border:2px solid gray;
-border-radius:10px;
+border-radius:25px;
 font-family:raleway;
 background-color:#fff;
 margin: 10px;
+text-align: center;
 }
-/*h2 {
-background-color:#FEFFED;
-padding:20px 35px;
-margin:-10px -50px;
-text-align:center;
-border-radius:10px 10px 0 0
-}
-*/
+
 hr {
 margin:35px 100px;
 border:0;
@@ -299,41 +312,44 @@ width:82%;
 padding:10px;
 margin-top:30px;
 border:1px solid #ccc;
-padding-left:40px;
+padding-left:10px;
 font-size:16px;
 font-family:raleway
 }
-#name {
-background-image:url('');
+/*#name {
+background-image:url('images/user.png');
 background-repeat:no-repeat;
 background-position:5px 7px
+background-size: 1px;
 }
 #email {
-background-image:url('');
+background-image:url('images/email.png');
 background-repeat:no-repeat;
 background-position:5px 7px
-}
+}*/
 textarea {
-background-image:url('');
+/*background-image:url('');
 background-repeat:no-repeat;
 background-position:5px 7px;
+*/
 width:82%;
 height:95px;
 padding:10px;
 resize:none;
 margin-top:30px;
 border:1px solid #ccc;
-padding-left:40px;
+padding-left:10px;
 font-size:16px;
 font-family:raleway;
-margin-bottom:30px
+margin-bottom:30px;
 }
+
 #submit {
 text-decoration:none;
 width:100%;
 text-align:center;
 display:block;
-background-color:#FFBC00;
+background-color: rgba(244, 183, 86,.75);
 color:#fff;
 border:1px solid #FFCB00;
 padding:10px 0;
@@ -341,6 +357,7 @@ font-size:20px;
 cursor:pointer;
 border-radius:5px
 }
+
 span {
 color:red;
 font-weight:700
@@ -413,7 +430,7 @@ font-weight:700
  position: absolute;
  top: .5rem;
  right: 1.5rem;
- background-color: lightgray;
+ background-color: rgba(244, 183, 86,.75);
  transform: rotate(-45deg);
  display: inline-block;
  border-radius: 1rem;
