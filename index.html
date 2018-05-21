@@ -5,10 +5,12 @@
 <link rel="stylesheet" href="squawk.css">
   <link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico|Signika" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Judson|Quando" rel="stylesheet">
-
-  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <!--<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
   </head>
 
   <body>
@@ -133,6 +135,19 @@
 <a href="javascript:%20check_empty()" id="submit">Send</a>
 </form>
 </div>
+<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBwh-9DJdY2QOUhnz7jRTuHNjfcg7F7f9E",
+    authDomain: "squawk-ece48.firebaseapp.com",
+    databaseURL: "https://squawk-ece48.firebaseio.com",
+    projectId: "squawk-ece48",
+    storageBucket: "squawk-ece48.appspot.com",
+    messagingSenderId: "74911546041"
+  };
+  firebase.initializeApp(config);
+</script>
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -158,6 +173,19 @@
    closeModal();
  });
 
+ function Submit() {
+   $('#submit').removeClass('open');
+   $('#submit').removeClass('darken').remove();
+ }
+
+ $('#submit').click(function(){
+  openModal('#getemail');
+
+ });
+
+ $('#submit').click(function(){
+   closeModal();
+ });
 
 
   </script>

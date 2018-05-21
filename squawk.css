@@ -467,7 +467,12 @@ Message @Jen
 
 *bold* _italics_ ~strike~ `code` ```preformatted``` >quote
 
-
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  body {
+    width:100%;
+  }
+}
 
    body{
      @media (max-width: 500px){
