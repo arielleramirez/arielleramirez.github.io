@@ -1,0 +1,131 @@
+
+
+* {
+box-sizing: border-box;
+margin: 0;
+}
+
+header{
+color: #f8fffc;
+/*height: 100vh;*/
+background-position: bottom;
+}
+
+
+
+h1{
+color: black;
+display: left;
+font-family: 'Quicksand', sans-serif;
+Font-Size: 35px;
+text-transform: uppercase;
+}
+
+.contact{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.resume{
+  text-align: center;
+  margin-top: 50px;
+}
+.info >p{
+  text-align: center;
+  margin:5px;
+}
+
+i{
+  color:black;
+}
+
+#myCarousel{
+  padding: 0 200px;
+}
+
+.socialmedia{
+ width: 179vh;
+ text-align: center;
+ float: left;
+ padding: 10px;
+ font-size: 20px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+display: flex;
+flex-direction: row-reverse;
+padding:15px 35px 0 15px;
+
+
+
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: black;
+  margin: 0 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px 35px;
+  font-family: 'Quicksand', sans-serif;
+  Font-Size:  15px;
+
+
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: white;
+  color: lightgray;
+}
+
+.paragraph > p{
+  display:left;
+  margin: 150px 200px;
+  font-family: 'Quicksand', sans-serif;
+  Font-Size:  15px;
+}
+
+.paragraph{
+  margin: 0 50px;
+}
+
+
+/* flexbox */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin: 35px 5px 0 100px;
+
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
